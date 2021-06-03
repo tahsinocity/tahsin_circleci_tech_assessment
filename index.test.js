@@ -30,7 +30,7 @@ describe('index.html', () => {
 		const button = getByText(container, 'Click me!');
 
 		fireEvent.click(button);
-		let generateNewText = container.querySelectorAll('#container p');
+		let generateNewText = container.querySelectorAll('#container');
 		expect(generateNewText[0].innerHTML).toBe('CircleCi');
 	});
 });

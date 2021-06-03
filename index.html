@@ -1,28 +1,23 @@
 <html>
-  <head>
-    <title>CircleCI Tech Assessment</title>
-  </head>
-  <body>
+	<head>
+		<title>CircleCI Tech Assessment</title>
+	</head>
+	<body>
+		<h1>Tahsin Ahmed CircleCI Technical Assessment</h1>
+		<button>Click me!</button>
+		<div id="container"></div>
 
-    <h1>Tahsin Ahmed CircleCI Technical Assessment</h1>
-    <button class="btn btn-lg btn-primary">Click me!</button>
-    <div id="container"></div>
+		<script>
+			(function () {
+				const newText = 'CircleCi';
 
+				const appendNewText = () => {
+					document.querySelector('#container').innerHTML = newText;
+				};
 
-    <script>
-      (function() {
-        const newText = 'CircleCi';
-          
-
-        const appendNewPun = () => {
-          const p = document.createElement('p');
-          p.innerHTML = newText;
-          document.querySelector('#container').prepend(p);
-        }
-
-        const button = document.querySelector('button');
-        button.addEventListener('click', appendNewPun);
-      })();
-    </script>
-  </body>
+				const button = document.querySelector('button');
+				button.addEventListener('click', appendNewText);
+			})();
+		</script>
+	</body>
 </html>
