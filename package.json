@@ -1,0 +1,21 @@
+{
+  "name": "tahsin_circleci_tech_assessment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@testing-library/dom": "^7.31.2",
+    "express": "^4.17.1",
+    "jest": "^27.0.4"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.14.0",
+    "@testing-library/jest-dom": "^5.13.0"
+  }
+}
